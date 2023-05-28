@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* header */
+.header{
+    width: 100%;
+    height: auto;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+    /* header top */
+    .shop-name>h3{
+        font-size: 28px;
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        padding: 8px 20px;
+        display: inline-block;
+    }
+    .header-top{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: black;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+        /* logo */
+        .logo {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 50px;
+        }
+        .logo h1{
+            color: white;
+            font-size: 20px;
+        }
+        .logo a{
+            margin: 0;
+            padding: 0;
+            display: block;
+            height: 50px;
+        }
+        .logo a img{
+            width: 50px;
+            height: 50px;
+        }
+        /* search box */
+        .search-box{
+            margin: 0;
+            padding: 0;
+            margin-right: 100px;
+        }
+        .search-box .frm-search .search-input{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-right: 2px;
+            padding: 7px;
+            width: 300px;
+        }
+        .search-box .frm-search .search-submit{
+            border: 1px solid black;
+            border-radius: 100em;
+            padding: 6px 7px;
+        }
+        /* account */
+        .account{
+            width: 350px;
+            display: flex;
+        }
+        .account button{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        
+        .account  button a{
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .storage a button{
+            font-size:15px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            outline: none;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .gradientButton{
+            background-image: linear-gradient(to right,black,
+            black);
+            color: #000000;
+            border: none;
+            font-size: 18px;
+            transition: all 0.3s;
+            padding: 10px;
+            cursor: pointer;
+            animation: gradientButton 3s ease infinite;
+          }
+          
+          @keyframes gradientButton{
+            0% {
+              background-position: 0% 25%;
+              color: #d13420;
+            }
+            25% {
+                background-position: 500% 75%;
+                color: #e7f33f;
+              }
+            50% {
+              background-position: 75% 100%;
+              color: #4673d4;
+            }
+            75% {
+                background-position: 100% 25%;
+                color: #e22efa;
+              }
+            100% {
+              background-position: 25% 50%;
+              color: #f70676;
+            }
+          }
+    /* header bottom */
+    .header-bottom{
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        height: 32px;
+    }
+        /* menu */
+        .container{
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        nav .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;/* Phần quan trọng xóa khoảng cách giữa header top and bottom */
+            padding: 0px 20px ;
+            list-style: none;
+        }
+        .menu .menu-item{
+            border: 1px solid black;
+            padding: 6px 0px;
+        }
+        .menu .menu-item #ori-a{
+            padding: 6px 14px;
+        }
+        .menu .menu-item:hover{
+            transition: 100ms;
+            background-color: white;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+        .menu li:hover #ori-a{
+            transition: 100ms;
+            color: #ff0055;
+            text-shadow: #ff0055 1px 1.5px 5px ;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+            /* menu - original */
+            .menu-item{
+                position: relative;
+            }
+            .menu-original-item{
+                position: absolute;
+                width: 159.1px;
+                display: none;
+                padding: 8px 0px 0px;
+                list-style: none;
+                background-color: white;
+                transform: translateX(-0.7%);
+            }
+            .menu-original-item li{
+                padding: 5px 0px;
+                border-bottom: 1px solid rgb(179, 177, 177);
+                
+            }
+            .menu-original-item li:last-child{
+                border: none;
+                
+            }
+            .menu-original-item li a{
+                margin-left: 10px;
+                color: black;
+            }
+            .menu .menu-item:hover .menu-original-item{
+                display: block;
+                transition: 100ms;
+            }
+            .menu-original-item li:hover{
+                background-color: #cacaca;
+            }
+            /* menu brand */
+            .menu-brand-item{
+                position: absolute;
+                width: 139.33px;
+                display: none;
+                padding: 8px 0px 0px;
+                list-style: none;
+                background-color: white;
+                transform: translateX(-0.7%);
+            }
+            .menu-brand-item li{
+                padding: 5px 0px;
+                border-bottom: 1px solid rgb(179, 177, 177);
+                
+            }
+            .menu-brand-item li:last-child{
+                border: none;
+                
+            }
+            .menu-brand-item li a{
+                margin-left: 10px;
+                color: black;
+            }
+            .menu .menu-item:hover .menu-brand-item{
+                display: block;
+                transition: 100ms;
+            }
+            .menu-brand-item li:hover{
+                background-color: #cacaca;
+            }
+    /* gradient */
+    .gradient {
+        background-image: linear-gradient(to right, 
+        #ea05ff, #0eff06, #fbff04, #eb5454);
+        background-size: 300% 100%;
+        animation: gradient 5s ease infinite;
+        height: 5px;
+      }
+      
+      @keyframes gradient{
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+/* page body  all product*/
+.page-body{
+    background-color: #ffffff;
+    height: cover;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.page-body{
+    max-width: auto;
+    margin:0px 60px auto;
+}
+.page-body .headline{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border-bottom: 1px solid #b1b1b1;
+}
+.page-body .product{
+    list-style: none;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 18px 0px;
+    padding-top: 30px;
+}
+.product li{
+    width: 25%;
+    padding: 10px 0px;
+}
+.product li a{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+}
+.product li img{
+    max-width: 100%;
+    height: auto    ;
+}
+/* CHỈNH LẠI THÊM MUA NGAY VÀO */
+.product-items:hover img{
+    transform: translateY(-5%);
+    box-shadow: 2px 5px 20px 2px rgba(0, 0, 0, 0.75);
+    
+}
+.product-items .product-price,.product-name,.product-thumb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  */
+/* footer */
+.footer{
+    max-width: auto;
+    margin: 0px auto;
+    background-color: black;
+    height: 160px;
+    margin-top: 10px;
+    transform: translateY(50px);
+    
+}
+.menu-footer{
+    display: flex;
+    padding-top: 20px;
+}
+.menu-footer .menu-footer-li+.menu-footer-li{
+    padding-left: 90px;
+}
+.menu-footer li h3,.menu-footer-list{
+    color: white;
+}
+.menu-footer-list{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.address{
+    padding-left: 25px;
+    width: 85%;
+}
+.menu-footer-li img {
+    width: 150px;
+    height: 80px;
+}
+.menu-footer-list li+li{
+    padding-top: 3px;
+}

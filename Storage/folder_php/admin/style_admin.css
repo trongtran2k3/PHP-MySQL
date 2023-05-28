@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+main{
+    
+    display: flex;
+    max-width: 1600px;
+    height: auto;
+}
+.main_left{
+    width: 150px;
+    border: 1px solid black;
+    height: auto;
+    background-color: rgb(253, 206, 255);
+}
+.main_left form{
+    width: 150px;
+    display: grid;
+    
+}
+.main_left form a {
+    display: flex;
+    text-decoration: none;
+    padding-left: 20px;
+    align-items: center;
+    color: black;
+    width: 128px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    text-align: left;
+    background-color: rgb(253, 206, 255);
+}
+.main_left form a:first-child{
+    padding:0;
+    width: 148px;
+}
+.name{
+    width: 150px;
+    text-align: center;
+}
+.name a{
+    font-size: 32px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main_left form a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #b6b6b6;
+}
+.main_left form a:first-child:hover{
+    color: rgb(132, 132, 132);
+    background-color: rgb(253, 206, 255);
+}
+.main_left form .name{
+    margin: 10px 0px 10px;
+}
+.main_left form a i{
+    padding: 5px 6px;
+}
+.main_right{
+    width: aut0;
+    background-color: rgb(220, 220, 220);
+    height: auto;
+}
+.main_right .search{
+    width: 1000px;
+    height: 40px;
+}
+.search_bar{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+}
+.search_bar #search{
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.search_bar #sub{
+    width: 100px;
+}
+.search_bar .label{
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.search_bar .label:hover{
+    cursor: pointer;
+}
+.main_right form table{
+    width: 1055px;
+    height: auto;
+    
+}
+.main_right form tr{
+    text-align: center;
+    height: 30px;
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    padding: 5px 7px;
+    border: 0;
+    outline: none;
+    border: 1px solid black;
+    margin: 10px 5px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.btn:hover{
+    color: orangered;
+    background-color: #fdcccc;
+    cursor: pointer;
+}
+.change{
+    width: 1055px;
+    height: auto;
+    background-color: rgb(220, 220, 220);
+}
+.change form{
+    width: 500px;
+    text-align: center;
+    margin: 40px 150px;
+}
+.change .tb_change{
+    width: 500px;
+    text-align: left;
+}
+.change tr:last-child{
+    height: 40px;
+}
+.change tr:last-child a {
+    margin: 40px;
+    padding: 3px 7px ;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+.change tr:last-child a:hover{
+    color: orange;
+    background-color:#e3e3e3;
+}
